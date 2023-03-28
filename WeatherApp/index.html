@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
 
@@ -20,13 +20,15 @@
             </button>
         </div>
     
-        <div class="weather">
-            <h2 class="city">Weather in Nowhere</h2>
-            <h1 class="temp">70°F</h1>
-            <img src="" alt="" class="weatherIcon"/>
-            <div class="description">Sunny</div>
-            <div class="humidity">Humidity: 30%</div>
-            <div class="wind">Wind speed: 0 mph</div>
+        <div class="weather loading">
+            <h2 class="city">No City</h2>
+            <h1 class="temp">No Temp</h1>
+            <div class="flex">
+                <img src="https://openweathermap.org/img/wn/04n.png" alt="" class="icon"/>
+                <div class="description">No Description</div>
+            </div>
+            <div class="humidity">Humidity: None Detected</div>
+            <div class="wind">Wind speed: None Detected</div>
         </div>
         
     </div>
